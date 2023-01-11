@@ -6,7 +6,7 @@ abstract class TodoState {
 }
 
 class TodoInitial extends TodoState {
-  TodoInitial() : super(todos: []);
+  TodoInitial({List<Todo>? todos}) : super(todos: todos ?? []);
 }
 
 class TodoAdded extends TodoState {
